@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html ng-app="App">
+<head>
+    <title>Assignment 4</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var app = angular.module('App', []);
+        app.controller('Brandon', function ($scope) {
+            $scope.name = "Brandon"
+            $scope.title = "Developer"
+        });
+        app.controller('Chris', function ($scope) {
+            $scope.name = "Chris"
+            $scope.title = "Director of IT"
+        });
+        app.controller('Kasia', function ($scope) {
+            $scope.name = "Kasia"
+            $scope.title = "Developer"
+        });
+    </script>
+    <style>
+        body {
+            background-color: #719AF5;
+            text-align: center;
+        }
+    </style>
+
+
+
+	<meta charset="utf-8" />
+</head>
+<body>
+    <div ng-controller="Brandon">
+		<div class="row">
+			<div class="col-xs-2">
+				<h2>
+					<label>Name:</label>
+					<label>{{name}}</label>
+					<label>Title:</label>
+					<label>{{title}}</label>
+				</h2>
+			</div>
+		</div>        
+    </div>
+    <div ng-controller="Chris">
+        <div class="row">
+			<div class="col-xs-2">
+				<h2>
+					<label>Name:</label>
+					<label>{{name}}</label>
+					<label>Title:</label>
+					<label>{{title}}</label>
+				</h2>
+			</div>
+		</div>    
+    </div>
+    <div ng-controller="Kasia">
+        <div class="row">
+			<div class="col-xs-2">
+				<h2>
+					<label>Name:</label>
+					<label>{{name}}</label>
+					<label>Title:</label>
+					<label>{{title}}</label>
+				</h2>
+			</div>
+		</div>    
+    </div>
+</body>
+</html>
